@@ -9,6 +9,6 @@ class BowlingGame:
         rst = sum(self.score_board)
 
         for i in range(len(self.score_board) // 2):
-            if self.score_board[i] + self.score_board[i + 1] == 10:
-                rst += self.score_board[i + 2]
+            if self.score_board[i * 2] + self.score_board[i * 2 + 1] == 10:
+                rst += self.score_board[(i + 1) * 2]
         return rst
