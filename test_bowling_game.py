@@ -29,7 +29,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(16, game.score())
 
-    @skip
     def test_스트라이크(self):
         game = BowlingGame()
         for i in range(12):
