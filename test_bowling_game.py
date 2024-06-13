@@ -12,7 +12,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(0, game.score())
 
-    @skip
     def test_각1점씩획득(self):
         game = BowlingGame()
         for i in range(20):
@@ -20,7 +19,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(20, game.score())
 
-    @skip
     def test_스페어(self):
         game = BowlingGame()
         game.roll(5)
@@ -31,7 +29,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(16, game.score())
 
-    @skip
     def test_스트라이크(self):
         game = BowlingGame()
         for i in range(12):
@@ -39,7 +36,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(300, game.score())
 
-    @skip
     def test_샘플게임(self):
         game = BowlingGame()
         game.roll(1)
