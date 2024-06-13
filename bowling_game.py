@@ -1,5 +1,7 @@
 class BowlingGame:
-    score_board = []
+    def __init__(self):
+        self.score_board = []
+
     def roll(self, pins):
         self.score_board.append(pins)
 

@@ -12,7 +12,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(0, game.score())
 
-    @skip
     def test_각1점씩획득(self):
         game = BowlingGame()
         for i in range(20):
