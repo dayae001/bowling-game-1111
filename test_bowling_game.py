@@ -36,7 +36,6 @@ class TestBowlingGame(unittest.TestCase):
 
         self.assertEqual(300, game.score())
 
-    @skip
     def test_샘플게임(self):
         game = BowlingGame()
         game.roll(1)
